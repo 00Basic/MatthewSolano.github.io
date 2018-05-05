@@ -104,16 +104,17 @@ a{
 
 nav{
     background-image: url(blur.png);
-  
+    background-size: 100%;
     margin-top: 0;
-    height: 50px;
+    height: 42px;
     text-align: center;
-    font-size: 24px;
-    padding: 5px 10%;
+    font-size: 20px;
+    padding: 5px 20px;
 }
+
 nav > ul{
-    margin: 0 auto;
-    width:80%; 
+    margin: 0 5% ;
+    width:100%; 
 
 }
 /* first level*/
