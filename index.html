@@ -41,6 +41,7 @@
 				
 			</div>
 		</header>
+		<img id="button" src="css/menu.jpg" onclick="openPopupMenu()" title="Menu">
 		<nav>
 			<ul class="clearfix">
 				<li class="level-1">
@@ -108,12 +109,11 @@
 			</li>
 		</ul>
 	</nav>
-	<div id="popBg">
-		<div id="popMain">
-			<div id="popClose" title="Close Menu">
-				<div id="popTitle">
+		<div id="popBg">
+			<div id="popMain">
+				<p id="popTitle">
 					Welcome
-				</div>
+				</p>
 				<div id="popMenu">
 					<ul>
 						<li>Home</li>
@@ -122,12 +122,13 @@
 						<li>Contact</li>
 					</ul>
 				</div>
-				<p>
-					X
-				</p>
+				<div id="popClose" title="Close Menu" onclick="closePopupMenu()">
+					<p>
+						X
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
 	<div class="body1">
 		<button class="btn btnlike" onClick="addLike(this)">
 		<span>Like</span>
@@ -179,5 +180,17 @@
 	ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+			<script type="text/javascript">
+			var popupDiv = document.getElementById("popBg");
+
+			function openPopupMenu(){
+				popupDiv.style.display ="block";
+			}
+
+			function closePopupMenu(){
+				popupDiv.style.display ="none";
+			}
+
+		</script>
 </body>
 </html>
