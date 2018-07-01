@@ -115,8 +115,8 @@ nav{
 
 }
 nav > ul{
-    margin:0 20% ;
-    width:100%; 
+    margin:0 20%;
+
 
 }
 /* first level*/
@@ -296,7 +296,7 @@ body {
 }
 #img1:hover{
    transform: translate(500px) rotate(90000deg);
-   background-size: cover;
+
 }
 
 .suriken{
@@ -324,8 +324,8 @@ animation-fill-mode: forwards;
     width: 50px;
     float: right;
         padding-top: 20px;
-    padding-right: 5px;
-    padding-left: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
 }
 #linkedin{
     height: 50px;
@@ -353,63 +353,69 @@ footer p{
     padding-left:  10px;
     margin: 0;       
 }
-#popBg {
+#button{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.7);
-    width: 100%;
-    height: 100%;
-    display: none;
+    top: 10%;
+    left: 97%;
+}
+
+#popBg {
+
 
 }
 #popMain{
     position: fixed;
-    width: 800px;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: white;
-    left: 50%;
-    margin-left: -400px;
-    top: 50%;
-    margin-top: -250px;
+    width: 200px;
+    height: 180px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    left: 89%;
+    top: 10%;
+    transform-origin: 0% 0% 0;
+
 }
 #popClose {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    border: 2px solid black;
-    text-align: center;
-    right: 5px;
-    top: 5px;
+    width: 35px;
+    height: 35px;
+    right: 1px;
+    top: 1px;
     cursor: pointer;
+
 }
-#popClose p{
-    margin-top: 5px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
+
 #popTitle{
     text-align: center;
     font-family: sans-serif;
     font-size: 30px;
     background-color: lightgreen;
+    margin-top: 0px;
+    margin-bottom: 2px;
 
 }
-
 #popMenu{
+    margin-right: 28px;
     font-family: sans-serif;
     text-align: center;
 }
-#button{
-    position: fixed;
-    top: 10%;
-    left: 97%;
-    height: 35px;
-    width: 35px;
+#popMenu ul{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+#popMenu li{
+    padding-top: 7px;
+    padding-bottom: 7px;
     margin: 0px;
+}
+
+#popMenu li:hover{
+    background-color: #bec197;
+    color: black;
 }
 
 @keyframes float{
